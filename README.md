@@ -31,7 +31,7 @@
 > **Tip**: Use your package manager (`vcpkg`, Homebrew, apt, pacman, …) or supply the paths manually with `-I` / `-L` flags.
 
 
-Key implementation points
+## Key implementation points
 Topic	Location in code	Details
 Sphere mesh	createSphere()	Same tessellation as HW5 (32 × 16), 6-float stride (position + normal)
 Projection	main_Phong_Shader.cpp	glm::frustum(-0.1, 0.1, -0.1, 0.1, 0.1, 1000) – maps HW5 values for a pixel-perfect match
@@ -39,12 +39,12 @@ Gamma correction	Phong.frag	uniform float uGamma = 2.2; → pow(color, 1.0 / uGa
 Uniform upload	main_Phong_Shader.cpp	Ka, Kd, Ks, shininess, Ia, light pos, eye pos, gamma all sent via glUniform* calls
 No fixed-function	Everywhere	Pure Core Profile; no legacy functions
 
-Result
+## Result
 
 
 ![Assignment7 결과 화면](Assignment7.png)
 
-Runtime keys
+## Runtime keys
 Key	Action
 F	Toggle GL_FRAMEBUFFER_SRGB (compare linear vs sRGB output)
 ESC	Quit application
