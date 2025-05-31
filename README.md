@@ -30,19 +30,7 @@
 
 > **Tip**: Use your package manager (`vcpkg`, Homebrew, apt, pacman, …) or supply the paths manually with `-I` / `-L` flags.
 
-### Windows (MinGW or MSVC)
 
-```bash
-mkdir build && cd build
-clang++ ../main_Phong_Shader.cpp -o Phong.exe ^
-  -I%GLFW_INC% -I%GLAD_INC% -I%GLM_INC% ^
-  %GLFW_LIB% %OPENGL32_LIB% %GLAD_LIB% ^
-  -std=c++17 -mwindows
- Linux / macOS
-
-mkdir build && cd build
-g++ ../main_Phong_Shader.cpp -o Phong \
-   -lglfw -ldl -lGL -std=c++17
 🔑 Key implementation points
 Topic	Location in code	Details
 Sphere mesh	createSphere()	Same tessellation as HW5 (32 × 16), 6-float stride (position + normal)
