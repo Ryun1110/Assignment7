@@ -40,7 +40,7 @@ Uniform upload	main_Phong_Shader.cpp	Ka, Kd, Ks, shininess, Ia, light pos, eye p
 No fixed-function	Everywhere	Pure Core Profile; no legacy functions
 
 📸 Result
-(Screenshot of the final frame goes here – identical to HW6 output)
+![Assignment7 결과 화면](Assignment7.png)
 
 🔧 Runtime keys
 Key	Action
