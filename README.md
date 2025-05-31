@@ -1,4 +1,4 @@
-#Assignment 7 – OpenGL Shader Implementation 
+Assignment 7 – OpenGL Shader Implementation 
 
 Computer Graphics HW7 – Single‑sphere Phong‐shading pipeline in modern OpenGL
 
